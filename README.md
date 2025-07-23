@@ -77,7 +77,7 @@ This project follows a **Medallion Architecture** with Bronze and Silver layers.
 
 - Cleans, joins, and applies transformations on the silver data using **ADF Data Flow**.
 
-![Data Flow](Screnshots/dataflow_screenshot.png)
+![Data Flow](Screenshots/dataflow_screenshot.png)
 
 ---
 
