@@ -8,7 +8,8 @@ End-to-end Azure Data Factory pipeline to process IPL dataset using event-driven
 
 - **Source Files**: `matches.csv` and `deliveries.csv`
 - **Bronze Layer**: Raw ingestion using event-based triggers
-- **Silver Layer**: Cleaned and transformed data using Data Flows
+- **Silver Layer**: Cleaned and using Data Flows
+- **Gold Layer**: transformed data using Data Flows
 - **Orchestration**: Azure Data Factory Pipelines
 - **Transformations**: Azure Data Flow inside ADF
 - **Trigger**: Event-based trigger on ADLS container (`bronze`)
