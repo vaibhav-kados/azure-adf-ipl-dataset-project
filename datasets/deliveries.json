@@ -1,0 +1,93 @@
+{
+    "name": "deliveries",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "deliveries.csv",
+                "fileSystem": "bronze"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "match_id",
+                "type": "String"
+            },
+            {
+                "name": "inning",
+                "type": "String"
+            },
+            {
+                "name": "batting_team",
+                "type": "String"
+            },
+            {
+                "name": "bowling_team",
+                "type": "String"
+            },
+            {
+                "name": "over",
+                "type": "String"
+            },
+            {
+                "name": "ball",
+                "type": "String"
+            },
+            {
+                "name": "batter",
+                "type": "String"
+            },
+            {
+                "name": "bowler",
+                "type": "String"
+            },
+            {
+                "name": "non_striker",
+                "type": "String"
+            },
+            {
+                "name": "batsman_runs",
+                "type": "String"
+            },
+            {
+                "name": "extra_runs",
+                "type": "String"
+            },
+            {
+                "name": "total_runs",
+                "type": "String"
+            },
+            {
+                "name": "extras_type",
+                "type": "String"
+            },
+            {
+                "name": "is_wicket",
+                "type": "String"
+            },
+            {
+                "name": "player_dismissed",
+                "type": "String"
+            },
+            {
+                "name": "dismissal_kind",
+                "type": "String"
+            },
+            {
+                "name": "fielder",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,30 @@
+{
+    "name": "new_data_event_trigger",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Started",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "master_pipeline",
+                    "type": "PipelineReference"
+                }
+            },
+            {
+                "pipelineReference": {
+                    "referenceName": "databricks_automated_pipeline",
+                    "type": "PipelineReference"
+                }
+            }
+        ],
+        "type": "BlobEventsTrigger",
+        "typeProperties": {
+            "blobPathBeginsWith": "/bronze/blobs/",
+            "ignoreEmptyBlobs": true,
+            "scope": "/subscriptions/f0438722-7b46-489c-a21e-dce3fb951cb2/resourceGroups/ipl_dataset_analysis_project_rg/providers/Microsoft.Storage/storageAccounts/datalakeipldataanalysis",
+            "events": [
+                "Microsoft.Storage.BlobCreated"
+            ]
+        }
+    }
+}

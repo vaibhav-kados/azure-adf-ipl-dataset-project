@@ -1,0 +1,105 @@
+{
+    "name": "matches",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage2",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "matches.csv",
+                "fileSystem": "bronze"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "id",
+                "type": "String"
+            },
+            {
+                "name": "season",
+                "type": "String"
+            },
+            {
+                "name": "city",
+                "type": "String"
+            },
+            {
+                "name": "date",
+                "type": "String"
+            },
+            {
+                "name": "match_type",
+                "type": "String"
+            },
+            {
+                "name": "player_of_match",
+                "type": "String"
+            },
+            {
+                "name": "venue",
+                "type": "String"
+            },
+            {
+                "name": "team1",
+                "type": "String"
+            },
+            {
+                "name": "team2",
+                "type": "String"
+            },
+            {
+                "name": "toss_winner",
+                "type": "String"
+            },
+            {
+                "name": "toss_decision",
+                "type": "String"
+            },
+            {
+                "name": "winner",
+                "type": "String"
+            },
+            {
+                "name": "result",
+                "type": "String"
+            },
+            {
+                "name": "result_margin",
+                "type": "String"
+            },
+            {
+                "name": "target_runs",
+                "type": "String"
+            },
+            {
+                "name": "target_overs",
+                "type": "String"
+            },
+            {
+                "name": "super_over",
+                "type": "String"
+            },
+            {
+                "name": "method",
+                "type": "String"
+            },
+            {
+                "name": "umpire1",
+                "type": "String"
+            },
+            {
+                "name": "umpire2",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
