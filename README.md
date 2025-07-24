@@ -24,7 +24,7 @@ End-to-end Azure Data Factory pipeline to process IPL dataset using event-driven
 
 ## 🧠 Architecture
 
-This project follows a **Medallion Architecture** with Bronze and Silver layers.
+This project follows a **Medallion Architecture** with Bronze, Silver and Gold layers.
 
 ![Architecture Diagram](architecture/adf_pipeline_architecture.png)
 
